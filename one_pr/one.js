@@ -1,4 +1,4 @@
-var str="privet mir";
+var str="privet_mir";
  str=str[0].toUpperCase()+str.substring(1)
 console.log(str)
 
