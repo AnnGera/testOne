@@ -1,5 +1,25 @@
-var myCounter = sequence(10,2);
-function sequence(a,b){
-return a+b;
+
+var pet = function(spec){
+    var it = {};
+
+    it.get_name = function(){
+        return spec.name;
+    }
+    it.sound=function(){
+        return spec.make_sound==undefined? 'Awch':spec.make_sound ;
+    }
+    return it;
 }
-console.log(myCounter())
+
+var cat= function(spec){
+    spec.sound=spec.make_sound==undefined? 'Meow':spec.make_sound ;
+    var it=pet(spec)
+    return it;
+}
+
+var myPet = pet({name:'Henry'})
+var myCat = cat({make_sound: 'Meow'});
+
+console.log(myPet.get_name());
+console.log(myPet.sound());
+console.log(myCat.sound());
