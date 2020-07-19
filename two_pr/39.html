@@ -1,0 +1,23 @@
+<ul id="ul">
+    <li>Hello</li>
+    <li>Word</li>
+    
+</ul>
+    
+<button>New</button>
+<script>
+    var ul = document.getElementById("ul");
+    ul.addEventListener("click", function newLi(){
+	var li = event.target.closest("li");
+	    if (li) {
+		    li.innerHTML +="!"; 
+	    }
+    });
+
+    var button = document.getElementsByTagName("button")[0];
+    button.addEventListener("click", function() { 
+    var liNew = document.createElement("li");
+    liNew.innerHTML = "пункт";
+    ul.appendChild(liNew);
+    });
+</script>

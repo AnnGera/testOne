@@ -1,0 +1,11 @@
+<div id="elem">
+    <p>Привет</p>
+    <p>Мир</p>
+</div>
+
+<script>
+    var elem = document.getElementById('elem');
+    for (var i=0; i<elem.children.length; i++){
+        elem.children[i].innerHTML+='!';
+    }
+</script>
