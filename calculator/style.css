@@ -6,8 +6,8 @@ html {
   body {
     font-family: Roboto;
     background: #8e0e00;
-    background: -webkit-linear-gradient(to left, #0099f7, #f11712);
-    background: linear-gradient(to left, #0099f7, #f11712);
+    background: -webkit-linear-gradient(45deg, #e9af89, #c589d4);
+    background: linear-gradient(45deg, #e9af89, #c589d4);
     display: flex;
     justify-content: center;
   }

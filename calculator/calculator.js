@@ -7,9 +7,7 @@
     //simple validation
     if (!bill_count||bill_count==0){
         document.getElementById('bill_count').style.borderColor='red';
-    } else {
-        document.getElementById('bill_count').style.borderColor='black' 
-    }
+    } 
     //check people input value
      if(!people_num||people_num<=0){
          people_num=1;
