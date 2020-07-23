@@ -113,7 +113,35 @@ button:hover {
   padding: 8px;
   list-style-type:circle;
   font-size: 30px;
-  color: #818181;
+  color: #e7e186;
+  display: block;
+}
+#overlay--cat--facts{
+  height: 0;
+  width: 100%;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+  -webkit-transition:  0.5s;
+}
+#overlay--cat--facts .closefanfacts {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 60px;
+  color:#e7e186;
+  cursor: pointer;
+}
+#overlay--cat--facts ul{
+  padding: 4px;
+  list-style-type:circle;
+  font-size: 16px;
+  color: #e7e186;
   display: block;
 }
 .forBtn{
@@ -162,12 +190,34 @@ button:hover {
   text-align: center; 
   margin-top: 25px;
 }
+.funFacts{
+  position: relative;
+  top: 20%;
+  width: 100%; 
+  text-align: center; 
+  margin-top: 25px;
+}
 
 @media screen and (max-height: 450px) {
   .overlay a {
       font-size: 20px
   }
   .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+  #todo{
+      width:100%;
+      height:100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay--cat--facts a {
+      font-size: 20px
+  }
+  .overlay--cat--facts .closefanfacts {
       font-size: 40px;
       top: 15px;
       right: 35px;

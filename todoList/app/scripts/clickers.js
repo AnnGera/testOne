@@ -6,6 +6,11 @@ var clearBtn = document.querySelector(".clear");
 var tipsBtn = document.querySelector(".tipBtn");
 var closeBtn = document.querySelector(".closebtn");
 var overlay = document.getElementById("overlay");
+var fanFact = document.querySelector(".fanFacts");
+var overlay_cat_facts = document.getElementById("overlay--cat--facts");
+var closefanfact = document.querySelector(".closefanfacts");
+
+//var closefanfact = document.querySelector(".fanFaclosefanfactscts")
 
 export function keypress(callback) {
   // Add todo element to todo list
@@ -47,11 +52,28 @@ export const tips = () => {
     overlay.style.height = "100%";
   });
 };
+export const fun = () => {
+  fanFact.addEventListener("click", function () {
+    overlay_cat_facts.style.height = "100%";
+  });
+};
+
+/*export const fun = () => {
+closefanfact.addEventListener("click", function () {
+  overlay_cat_facts.style.height = "100%";
+  });
+};*/
 
 export const close = () => {
   closeBtn.addEventListener("click", function (event) {
     event.preventDefault();
     overlay.style.height = "0";
+  });
+};
+export const closeFun = () => {
+  closefanfact.addEventListener("click", function (event) {
+    event.preventDefault();
+    overlay_cat_facts.style.height = "0";
   });
 };
 
